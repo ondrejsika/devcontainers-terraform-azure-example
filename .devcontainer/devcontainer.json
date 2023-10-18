@@ -1,0 +1,25 @@
+{
+  "name": "terraform-azure",
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/azure-cli:1": {},
+    "ghcr.io/devcontainers-contrib/features/terraform-asdf:2": {},
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "hashicorp.terraform",
+        "ms-vscode.makefile-tools",
+        "EditorConfig.EditorConfig"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {
+          "zsh": {
+            "path": "zsh"
+          }
+        }
+      }
+    }
+  }
+}
